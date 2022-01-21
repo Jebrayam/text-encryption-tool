@@ -5,12 +5,23 @@ var encryptionKeys = {
     "o": "ober",
     "u": "ufat"
 };
+var inputText = document.querySelector("#inputField");
+var translateButton = document.querySelector("#tranlate-button");
+var outputField = document.querySelector("#ouputField");
+var isEncrypted = true;
 
-var myText = "Hello world";
-console.log(encryptText(encryptionKeys, myText));
+translateButton.addEventListener("click", function(event){
+    event.preventDefault();
+    var message = "";
 
-var myText2 = "Henterllober woberrld";
-console.log(decryptText(encryptionKeys, myText2));
+    if(!isEncrypted){
+        message = encryptText(encryptionKeys, inputText.value);
+    } else{
+        message = decryptText(encryptionKeys, inputText.value);
+    }
+
+    outputField.value = message;
+});
 
 function encryptText(encryptionKeys, text){
     for(var key in encryptionKeys){
