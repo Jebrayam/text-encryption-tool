@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
 
     <title>Enigma Encryption</title>
@@ -18,22 +20,23 @@
         <div class="container">
             <form>
                 <div>
-                    <label for="encrypt">Encrypt:</label>
-                    <br>
-                    <input type="text" name="encryptText" placeholder="Text to encrypt">
+                    <div>
+                        <span>Encrypt</span>
+                    </div>
+                    <div>
+                        <span>Decrypt</span>
+                    </div>                    
+                    <input type="text" name="inputText" placeholder="Enter lowercase letters only, without accent">
                 </div>
-                <button>Encrypt</button>
+                <button>Translate</button>            
             </form>
         </div>
 
         <div class="container">
             <form>
                 <div>
-                    <label for="decrypt">Decrypt:</label>
-                    <br>
-                    <input type="text" name="decryptText" placeholder="Text to decrypt">
+                    <input type="text" name="processedText">
                 </div>
-                <button>Decrypt</button>
             </form>
         </div>
 
