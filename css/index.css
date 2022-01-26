@@ -1,11 +1,61 @@
 .container {
     text-align: center;
+    font-family: "Lucida Console";
+    color: white;
 }
 
-.container-title {
-    text-align: center;
+.text-field {
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(230, 230, 230, 0.3);
+    color: greenyellow
+  }
+
+#inputField::placeholder {
+    color: white;
 }
 
-.container-footer {
-    text-align: center;
+#translate-button {
+    border: 0;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(51, 255, 0);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0.5em;
+}
+
+#translate-button:hover {
+    background-color: black;
+    color: rgb(51, 255, 0);
+}
+
+a {
+    color: greenyellow;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 1px solid white;
+}  
+
+.flex-child:first-child {
+    margin-right: 10px;
+} 
+
+#encrypt {
+    color: black;
+    background-color: rgb(89, 255, 47);
+}
+
+#decrypt {
+    color: rgb(89, 255, 47);
 }

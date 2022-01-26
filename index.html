@@ -8,10 +8,10 @@
 
     <title>Enigma Encryption</title>
 </head>
-<body>
+<body background="img/background.jpg">
     
     <header>
-        <div class="container-title">
+        <div class="container">
             <h1 class="title">Enigma Encryption</h1>
         </div>
     </header>
@@ -19,23 +19,28 @@
     <main>
         <div class="container">
             <form>
-                <div>
-                    <div>
-                        <span>Encrypt</span>
-                    </div>
-                    <div>
-                        <span>Decrypt</span>
-                    </div>                    
-                    <input type="text" id="inputField" name="inputText" placeholder="Enter lowercase letters only, without accent">
+                <div class="flex-container">
+
+                    <span id="encrypt" class="flex-child Encrypt">
+                      Encrypt
+                    </span>
+                    
+                    <span id="decrypt" class="flex-child Decrypt">
+                      Decrypt
+                    </span>                    
                 </div>
-                <button id="tranlate-button">Translate</button>            
+                <br>
+                <input class="text-field" type="text" id="inputField" name="inputText" placeholder="Enter lowercase letters only, without accent">
+                <button id="translate-button">Translate</button> 
+                <br>  
+                <br>
             </form>
         </div>
 
         <div class="container">
             <form>
                 <div>
-                    <input type="text" id="ouputField" name="processedText">
+                    <input class="text-field" type="text" id="ouputField" name="processedText">
                 </div>
             </form>
         </div>
@@ -43,13 +48,15 @@
     </main>
 
     <footer>
-        <div class="container-footer">
+        <div class="container">
+            <br>
             <p>Author: Brayam Saavedra</p>
             <p>GitHub: <a href="https://github.com/Jebrayam">Jebrayam</a></p>   
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/changeMode.js"></script>
     
 </body>
 </html>
