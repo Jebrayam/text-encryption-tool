@@ -7,7 +7,7 @@ var encryptionKeys = {
 };
 var inputText = document.querySelector("#inputField");
 var translateButton = document.querySelector("#translate-button");
-var outputField = document.querySelector("#ouputField");
+var outputField = document.querySelector("#outputField");
 
 var encryptField = document.querySelector("#encrypt");
 var decryptField = document.querySelector("#decrypt");

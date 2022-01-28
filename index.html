@@ -19,10 +19,9 @@
     </header>
 
     <main>
-        <div class="container">
-            <form>
+        <div class="container">            
+            <form>                
                 <div class="flex-container">
-
                     <span id="encrypt" class="flex-child Encrypt">
                         Encrypt
                     </span>
@@ -31,22 +30,32 @@
                         Decrypt
                     </span>
                 </div>
-                <br>
+                <br>   
+                            
                 <textarea class="text-field auto_height" oninput="auto_height(this)" type="text" id="inputField"
                     name="inputText" placeholder="Enter lowercase letters only, without accent"></textarea>
-                <button id="translate-button">Translate</button>
-                <br>
-                <br>
-            </form>
+                
+                <div class="clearContainer">
+                    <button class="clearBtn">Clear</button>
+                </div>
+
+                <div class="btnContainer">                    
+                    <button id="translate-button">Translate</button>                             
+                </div>
+                                                
+                <br>        
+                
+            </form>            
         </div>
 
         <div class="container">
             <form>
                 <div>
-                    <textarea class="text-field auto_height" oninput="auto_height(this)" type="text" id="ouputField"
+                    <textarea class="text-field auto_height" oninput="auto_height(this)" type="text" id="outputField"
                         name="processedText"></textarea>
                 </div>
             </form>
+            <button class="copyBtn">Copy</button>
         </div>
 
     </main>
@@ -61,6 +70,8 @@
 
     <script src="js/main.js"></script>
     <script src="js/changeMode.js"></script>
+    <script src="js/clear.js"></script>
+    <script src="js/copy.js"></script>
 
 </body>
 

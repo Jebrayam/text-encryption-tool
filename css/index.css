@@ -34,6 +34,16 @@
     color: rgb(51, 255, 0);
 }
 
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.clearContainer {
+    display: flex;
+    justify-content: left; 
+}
+
 a {
     color: greenyellow;
 }
@@ -63,3 +73,35 @@ a {
 .auto_height { /* CSS */
     width: 100%;
   }
+
+.copyBtn {
+    border: 0;
+    float: left;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(51, 255, 0);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 0.5em;
+}
+
+.copyBtn:hover {
+    background-color: black;
+    color: rgb(51, 255, 0);   
+}
+
+.clearBtn {
+    border: 0;
+    float: left;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(51, 255, 0);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 0.5em;
+}
+
+.clearBtn:hover {
+    background-color: black;
+    color: rgb(51, 255, 0);   
+}
